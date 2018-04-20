@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/find_by_title"
+        android:title="Find by title"/>
+
+    <item android:id="@+id/popular_movies"
+        android:title="Popular Movies"/>
+
+    <item android:id="@+id/watchlist"
+        android:title="Watchlist"/>
+
+</menu>

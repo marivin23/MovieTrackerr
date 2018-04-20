@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MovieTracker</string>
+    <string name="OpenD">Open</string>
+    <string name="CloseD">Close</string>
+
+
+
+    <string-array name="MenuOptions">
+
+        <item>Find by Title</item>
+        <item>Popular Movies</item>
+        <item>Watchlist</item>
+        <item>Favourites</item>
+        <item>Password Reset</item>
+
+    </string-array>
+
+</resources>
