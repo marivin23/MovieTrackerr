@@ -1,5 +1,6 @@
 package com.cucc.movietracker;
 
+import android.app.FragmentTransaction;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -27,10 +28,10 @@ public class FragmentRecyclerAdapter extends RecyclerView.Adapter<FragmentRecycl
         titles.add("Thor");
         titles.add("Black Panther");
 
-        descriptions.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut");
-        descriptions.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut");
-        descriptions.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut");
-        descriptions.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut");
+        descriptions.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.");
+        descriptions.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.");
+        descriptions.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.");
+        descriptions.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.");
 
         images.add("https://ia.media-imdb.com/images/M/MV5BMTg2MTMyMzU0M15BMl5BanBnXkFtZTgwOTU3ODk4NTE@._V1_UX182_CR0,0,182,268_AL_.jpg");
         images.add("https://ia.media-imdb.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg");
@@ -64,11 +65,13 @@ public class FragmentRecyclerAdapter extends RecyclerView.Adapter<FragmentRecycl
         holder.description.setText(descriptions.get(position));
         holder.releaseDate.setText(dates.get(position));
 
+        holder.itemView.setOnClickListener(new ExternalOnClickListener(titles.get(position), images.get(position), descriptions.get(position), dates.get(position), "8"));
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return titles.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

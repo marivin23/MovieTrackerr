@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movieactivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_gradient"
+    android:orientation="vertical"
+    tools:context=".Movie">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/moviebg"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/movieposter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/images" />
+
+        <TextView
+            android:id="@+id/movietitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/movieposter"
+            android:text="Title"
+            android:textColor="@android:color/background_light"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/moviedescrption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movietitle"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/movieposter"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/moviefooterbg">
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
-        android:id="@+id/linearid"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="45dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="45dp"
+    android:layout_marginLeft="19dp"
+    android:layout_marginRight="19dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -319,5 +318,4 @@
                 app:srcCompat="@drawable/sortpink" />
         </LinearLayout>
 
-</LinearLayout>
 </LinearLayout>
