@@ -30,23 +30,46 @@
             android:id="@+id/movietitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/movieposter"
             android:text="Title"
             android:textColor="@android:color/background_light"
             android:textSize="40sp" />
 
         <TextView
+            android:id="@+id/releaseyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/movietitle"
+            android:layout_toRightOf="@id/movieposter"
+            android:text="2018"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            tools:text="2018" />
+
+        <TextView
+            android:id="@+id/movierating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/moviedescrption"
+
+            android:layout_toRightOf="@id/releaseyear"
+            android:text=" / IMDb: 7,9"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
             android:id="@+id/moviedescrption"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/movietitle"
+            android:layout_below="@id/releaseyear"
             android:layout_marginLeft="11dp"
             android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
             android:layout_toRightOf="@id/movieposter"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
             android:textColor="@android:color/background_light"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
     </RelativeLayout>
 
@@ -56,7 +79,9 @@
         android:layout_margin="1dp"
         android:layout_marginBottom="2dp"
         android:layout_marginTop="2dp"
-        android:background="@drawable/moviefooterbg">
+        android:background="@drawable/moviefooterbg"
+        android:id="@+id/infocontainer">
+
 
 
     </RelativeLayout>

@@ -1,0 +1,123 @@
+[
+  {
+    "id": 211672,
+    "vote_average": 6.4,
+    "title": "Minions",
+    "popularity": 197.218355,
+    "poster_path": "/q0R4crx2SehcEEQEkYObktdeFy.jpg",
+    "original_language": "en",
+    "original_title": "Minions",
+    "genre": [
+      "comedy",
+      "animation"
+    ],
+    "overview": "Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+    "release_date": "2015-06-17"
+  },
+  {
+    "id": 321612,
+    "vote_average": 6.8,
+    "title": "Beauty and the Beast",
+    "popularity": 106.789987,
+    "poster_path": "/tWqifoYuwLETmmasnGHO7xBjEtt.jpg",
+    "original_language": "en",
+    "original_title": "Beauty and the Beast",
+    "genre ": [
+      "animation",
+      "drama",
+      "musical"
+    ],
+    "overview": "A live-action adaptation of Disney's version of the classic 'Beauty and the Beast' tale of a cursed prince and a beautiful young woman who helps him break the spell.",
+    "release_date": "2017-03-16"
+  },
+  {
+    "id": 315635,
+    "vote_average": 7.4,
+    "title": "Spider-Man: Homecoming",
+    "popularity": 83.758572,
+    "poster_path": "/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+    "original_language": "en",
+    "original_title": "Spider-Man: Homecoming",
+    "genre": [
+      "action",
+      "science fiction"
+    ],
+    "overview": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
+    "release_date": "2017-07-05"
+  },
+  {
+    "id": 283995,
+    "vote_average": 7.6,
+    "title": "Guardians of the Galaxy Vol. 2",
+    "popularity": 65.778742,
+    "poster_path": "/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
+    "original_language": "en",
+    "original_title": "Guardians of the Galaxy Vol. 2",
+    "genre": [
+      "action",
+      "comedy",
+      "science fiction"
+    ],
+    "overview": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
+    "release_date": "2017-04-19"
+  },
+  {
+    "id": 324852,
+    "vote_average": 6.2,
+    "title": "Despicable Me 3",
+    "popularity": 59.374277,
+    "poster_path": "/5qcUGqWoWhEsoQwNUrtf3y3fcWn.jpg",
+    "original_language": "en",
+    "original_title": "Despicable Me 3",
+    "genre": [
+      "animation",
+      "comedy"
+    ],
+    "overview": "Gru and his wife Lucy must stop former '80s child star Balthazar Bratt from achieving world domination.",
+    "release_date": "2017-06-15"
+  },
+  {
+    "id": 281338,
+    "vote_average": 6.7,
+    "title": "War for the Planet of the Apes",
+    "popularity": 51.871006,
+    "poster_path": "/y52mjaCLoJJzxfcDDlksKDngiDx.jpg",
+    "original_language": "en",
+    "original_title": "War for the Planet of the Apes",
+    "genre": [
+      "action"
+    ],
+    "overview": "Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet.",
+    "release_date": "2017-07-11"
+  },
+  {
+    "id": 374720,
+    "vote_average": 7.4,
+    "title": "Dunkirk",
+    "popularity": 42.36843,
+    "poster_path": "/cUqEgoP6kj8ykfNjJx3Tl5zHCcN.jpg",
+    "original_language": "en",
+    "original_title": "Dunkirk",
+    "genre": [
+      "action"
+    ],
+    "overview": "Miraculous evacuation of Allied soldiers from Belgium, Britain, Canada, and France, who were cut off and surrounded by the German army from the beaches and harbor of Dunkirk, France, between May 26 and June 04, 1940, during Battle of France in World War II.",
+    "release_date": "2017-07-19"
+  },
+  {
+    "id": 396422,
+    "vote_average": 6.9,
+    "title": "Annabelle: Creation",
+    "popularity": 36.013749,
+    "poster_path": "/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg",
+    "original_language": "en",
+    "original_title": "Annabelle: Creation",
+    "genre": [
+      "drama",
+      "horror"
+    ],
+    "overview": "Several years after the tragic death of their little girl, a dollmaker and his wife welcome a nun and several girls from a shuttered orphanage into their home, soon becoming the target of the dollmaker's possessed creation, Annabelle.",
+    "release_date": "2017-08-09"
+  }
+]
+

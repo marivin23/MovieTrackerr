@@ -35,9 +35,10 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
     Button western;
     ImageButton clear;
     ImageButton search;
+    ImageButton sort;
 
-    private static int[] states = new int[19];
-    private List<String> queryItems = new ArrayList<String>();
+    private static int[] states = new int[19]; //each buttons state
+    private static List<String> queryItems = new ArrayList<String>(); //search genres
 
     public ButtonFragment() { }
 
@@ -72,6 +73,7 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
 
         clear = (ImageButton) view.findViewById(R.id.clear);
         search = (ImageButton) view.findViewById(R.id.searchButton);
+        sort = (ImageButton) view.findViewById(R.id.sortbutton);
 
         action.setOnClickListener(this);
         animation.setOnClickListener(this);
@@ -93,8 +95,10 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
         war.setOnClickListener((View.OnClickListener) this);
         western.setOnClickListener((View.OnClickListener) this);
 
+
         clear.setOnClickListener(this);
         search.setOnClickListener(this);
+        sort.setOnClickListener(this);
 
         return view;
     }
@@ -112,6 +116,7 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                         states[0] = 1;
                     } else {
                         action.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("action");
                         states[0] = 0;
                     }
                     break;
@@ -119,9 +124,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.adventure: {
                     if(states[1] == 0) {
                         adventure.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("adventure");
                         states[1] = 1;
                     } else {
                         adventure.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("adventure");
                         states[1] = 0;
                     }
                     break;
@@ -129,9 +136,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.animation: {
                     if(states[2] == 0) {
                         animation.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("animation");
                         states[2] = 1;
                     } else {
                         animation.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("animation");
                         states[2] = 0;
                     }
                     break;
@@ -139,9 +148,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.comedy: {
                     if(states[3] == 0) {
                         comedy.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("comedy");
                         states[3] = 1;
                     } else {
                         comedy.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("comedy");
                         states[3] = 0;
                     }
                     break;
@@ -149,9 +160,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.crime: {
                     if(states[4] == 0) {
                         crime.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("crime");
                         states[4] = 1;
                     } else {
                         crime.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("crime");
                         states[4] = 0;
                     }
                     break;
@@ -159,9 +172,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.documentary: {
                     if(states[5] == 0) {
                         documentary.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("documentary");
                         states[5] = 1;
                     } else {
                         documentary.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("documentary");
                         states[5] = 0;
                     }
                     break;
@@ -169,9 +184,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.drama: {
                     if(states[6] == 0) {
                         drama.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("drama");
                         states[6] = 1;
                     } else {
                         drama.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("drama");
                         states[6] = 0;
                     }
                     break;
@@ -179,9 +196,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.family: {
                     if(states[7] == 0) {
                         family.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("family");
                         states[7] = 1;
                     } else {
                         family.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("family");
                         states[7] = 0;
                     }
                     break;
@@ -189,9 +208,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.fantasy: {
                     if(states[8] == 0) {
                         fantasy.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("fantasy");
                         states[8] = 1;
                     } else {
                         fantasy.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("fantasy");
                         states[8] = 0;
                     }
                     break;
@@ -199,9 +220,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.history: {
                     if(states[9] == 0){
                         history.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("history");
                         states[9] = 1;
                     } else {
                         history.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("history");
                         states[9] = 0;
                     }
                     break;
@@ -209,9 +232,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.horror: {
                     if(states[10] == 0){
                         horror.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("horror");
                         states[10] = 1;
                     } else {
                         horror.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("horror");
                         states[10] = 0;
                     }
                     break;
@@ -219,9 +244,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.music: {
                     if(states[11] == 0){
                         music.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("musical");
                         states[11] = 1;
                     } else {
                         music.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("musical");
                         states[11] = 0;
                     }
                     break;
@@ -229,9 +256,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.mystery: {
                     if(states[12] == 0){
                         mystery.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("mystery");
                         states[12] = 1;
                     } else {
                         mystery.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("mystery");
                         states[12] = 0;
                     }
                     break;
@@ -239,9 +268,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.romance: {
                     if(states[13] == 0){
                         romance.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("romance");
                         states[13] = 1;
                     } else {
                         romance.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("romance");
                         states[13] = 0;
                     }
                     break;
@@ -249,9 +280,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.scifi: {
                     if(states[14] == 0){
                         scifi.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("science fiction");
                         states[14] = 1;
                     } else {
                         scifi.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("science fiction");
                         states[14] = 0;
                     }
                     break;
@@ -259,9 +292,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.tvmovie: {
                     if(states[15] == 0){
                         tvmovie.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("tv movie");
                         states[15] = 1;
                     } else {
                         tvmovie.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("tv movie");
                         states[15] = 0;
                     }
                     break;
@@ -269,9 +304,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.thriller: {
                     if(states[16] == 0){
                         thriller.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("thriller");
                         states[16] = 1;
                     } else {
                         thriller.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("thriller");
                         states[16] = 0;
                     }
                     break;
@@ -279,9 +316,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.war: {
                     if(states[17] == 0){
                         war.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("war");
                         states[17] = 1;
                     } else {
                         war.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("war");
                         states[17] = 0;
                     }
                     break;
@@ -289,9 +328,11 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                 case R.id.western: {
                     if(states[18] == 0){
                         western.setBackground(getResources().getDrawable(R.drawable.buttonshapefocused));
+                        queryItems.add("western");
                         states[18] = 1;
                     } else {
                         western.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        queryItems.remove("western");
                         states[18] = 0;
                     }
                     break;
@@ -332,7 +373,17 @@ public class ButtonFragment extends android.support.v4.app.Fragment implements V
                     break;
 
                 }
+                case R.id.sortbutton: {
+
+
+
+                }
             }
 
     }
+
+    public static List<String> getQueryItems(){
+        return queryItems;
+    }
+
 }

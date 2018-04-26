@@ -19,7 +19,8 @@ public class Movie extends AppCompatActivity {
     ImageView poster;
     TextView movietitle;
     TextView moviedescription;
-    //TextView movieyear;
+    TextView movieyear;
+    TextView movierating;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,8 @@ public class Movie extends AppCompatActivity {
         poster = (ImageView) findViewById(R.id.movieposter);
         movietitle = (TextView) findViewById(R.id.movietitle);
         moviedescription = (TextView) findViewById(R.id.moviedescrption);
-       // movieyear = (TextView) findViewById(R.id.movieyear);
+        movieyear = (TextView) findViewById(R.id.releaseyear);
+        movierating = (TextView) findViewById(R.id.movierating);
 
         Intent intent = getIntent();
         link = intent.getStringExtra("link");
@@ -46,7 +48,8 @@ public class Movie extends AppCompatActivity {
 
         movietitle.setText(title);
         moviedescription.setText(description);
-        //movieyear.setText( "(" + year + ")");
+        movieyear.setText(year);
+        movierating.setText(rating);
 
     }
 }

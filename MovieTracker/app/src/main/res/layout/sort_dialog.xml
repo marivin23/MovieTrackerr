@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_item"
+    android:id="@+id/dialog">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/radiobuttons">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                style="@android:style/Widget.Material.Light.CompoundButton.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton"
+                android:textColor="@android:color/background_light" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton"
+                android:textColor="@android:color/background_light" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton"
+                android:textColor="@android:color/background_light" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="Asc/Dsc"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttondialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_below="@id/radiobuttons"
+        android:layout_marginLeft="160dp"
+        android:background="@drawable/buttonshapefocused"
+        android:paddingBottom="5dp"/>
+
+</RelativeLayout>
